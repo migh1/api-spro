@@ -1,0 +1,235 @@
+{
+	"variables": [],
+	"info": {
+		"name": "api-spro",
+		"_postman_id": "5fa08261-bf3a-dd14-7d62-dc902d605463",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"url": {
+					"raw": "http://localhost/api-spro/Api/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api-spro",
+						"Api",
+						"create"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"equals": true,
+							"description": "",
+							"disabled": true
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "testedeemail@email.com",
+							"description": ""
+						},
+						{
+							"key": "username",
+							"value": "username_teste",
+							"description": ""
+						},
+						{
+							"key": "nome",
+							"value": "Nome do indivíduo",
+							"description": ""
+						},
+						{
+							"key": "senha",
+							"value": "senha em potencial",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Edit",
+			"request": {
+				"url": "http://localhost/api-spro/Api/edit",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46YWRtaW4=",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1",
+							"description": ""
+						},
+						{
+							"key": "email",
+							"value": "email_editado@4email.com",
+							"description": "",
+							"disabled": true
+						},
+						{
+							"key": "username",
+							"value": "username_editado1",
+							"description": "",
+							"disabled": true
+						},
+						{
+							"key": "nome",
+							"value": "nome editado1",
+							"description": ""
+						},
+						{
+							"key": "senha",
+							"value": "senha_editada",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Read",
+			"request": {
+				"url": "http://localhost/api-spro/Api/read",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "10",
+							"description": ""
+						},
+						{
+							"key": "email",
+							"value": "email_editado@4email.com",
+							"description": "",
+							"disabled": true
+						},
+						{
+							"key": "username",
+							"value": "teste username",
+							"description": "",
+							"disabled": true
+						},
+						{
+							"key": "nome",
+							"value": "nome editado1",
+							"description": "",
+							"disabled": true
+						},
+						{
+							"key": "senha",
+							"value": "senha_editada",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"url": "http://localhost/api-spro/Api/delete",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic dWx0aW1vIHVzZXIzOnNlbmhh",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "9",
+							"description": "",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "email_editado@4email.com",
+							"description": "",
+							"disabled": true
+						},
+						{
+							"key": "username",
+							"value": "ultimo user3",
+							"description": ""
+						},
+						{
+							"key": "nome",
+							"value": "nome editado1",
+							"description": "",
+							"disabled": true
+						},
+						{
+							"key": "senha",
+							"value": "senha_editada",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
