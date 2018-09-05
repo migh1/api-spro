@@ -28,7 +28,7 @@ Array(
 	[username] => usuario
 	[nome] => Nome Usuario
 	[senha] => senha
-	[admin] => 1 (0 ou 1, campo opcional)
+	[admin] => 1 (0 ou 1, campo opcional sendo 0 => USER e 1 => ADMIN) 
 )
 ////////////
 localhost/api-spro/Api/edit - POST
@@ -59,7 +59,16 @@ Autenticação da API feito na header, com o parametro Authentication. O Tipo de
 O código possui alguns comentários caso precise.
 
 
+###Para executar corretamente:
+1. Extrair o .rar com o conteudo da pasta
+2. Colocar a pasta em um apache com MySql
+3. Realizar as requisições conforme descrito acima, foi utilizado o POSTMAN para os devidos teste
+4. A collection com exemplos está dentro do .rar
+5. O Arquivo .SQL está dentro do .rar também
+6. Para alterar informações de conexao do banco, deve ser feito no caminho api-spro/application/config/database.php - arquivo de configuração do banco
+7. Caso necessário, alterações quanto ao localhost pode ser feito no caminho: api-spro/application/config/config.php - arquivo de configuração geral
 
 
-
+repositorio no github: https://github.com/migh1/api-spro
+não deu tempo de colocar a aplicação online
 Desculpe ser muito breve mas o tempo apurou, estou a disposição para esclarecer qualquer dúvida quanto ao código.
